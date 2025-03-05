@@ -1,0 +1,134 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    direction: rtl;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.day {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    width: 46px;
+}
+
+.day.completed::after {
+    content: '✔️';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 12px;
+}
+
+.day:hover {
+    background-color: #2980b9;
+}
+
+#details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+#quran-part,
+#prayers,
+#progress,
+#reminder {
+    margin-top: 20px;
+}
+
+#prayer-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#prayer-list li {
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#prayer-list li.completed {
+    background-color: #d5f5e3;
+}
+
+#progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#progress-bar {
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #219653;
+}
+
+input[type="time"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.day.quran-completed::before {
+    content: '📖';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+}
+
+#mark-quran {
+    background-color: #8e44ad;
+    margin-top: 10px;
+}
+
+#mark-quran:hover {
+    background-color: #732d91;
+}

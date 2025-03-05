@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروض رمضان</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>فروض رمضان</h1>
+        <div id="calendar">
+            <!-- أيام رمضان سيتم إضافتها ديناميكيًا باستخدام JavaScript -->
+        </div>
+
+        <div id="details">
+            <h2>تفاصيل اليوم</h2>
+            <div id="quran-part">
+                <h3>جزء القرآن:</h3>
+                <p id="quran-text"></p>
+                <button id="mark-quran">تمت القراءة</button>
+                <button id="show-quran">عرض الجزء كاملًا</button>
+            </div>
+            <div id="full-quran" style="display: none;">
+                <h3>النص الكامل:</h3>
+                <div id="quran-content"></div>
+            </div>
+            <div id="prayers">
+                <h3>الصلوات:</h3>
+                <ul id="prayer-list"></ul>
+            </div>
+            <div id="progress">
+                <h3>نسبة الإنجاز:</h3>
+                <progress id="progress-bar" value="0" max="100"></progress>
+                <span id="progress-text">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
